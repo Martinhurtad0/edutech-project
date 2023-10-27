@@ -1,0 +1,133 @@
+/* PERTENECE AL CSS MAIN*/
+a {
+  text-decoration: none;
+  color: #000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.boton {
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: background-color ease 0.4s;
+  font-weight: normal;
+}
+body {
+  background-color: rgb(247, 247, 247);
+}
+/* CIERRE MAIN*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.05em;
+  background-color: rgba(176, 238, 212, 0.302);
+}
+
+nav div img {
+  width: 100px;
+}
+nav .nav-contenedor-centro a {
+  margin: 0 15px;
+  padding: 5px 8px;
+  border-bottom: 3px solid transparent;
+  transition: border-color ease 0.7s;
+}
+nav .nav-contenedor-centro a:hover {
+  border-color: rgb(8, 184, 37);
+  background-color: rgba(66, 66, 66, 0.1);
+}
+.boton.login:hover {
+  background-color: rgba(255, 146, 45, 0.795);
+}
+
+.boton.login {
+  background-color: rgba(214, 214, 214, 0.5);
+}
+
+/*RESPONSIVE DEL NAV*/
+@media (max-width: 804px) {
+  /*nav*/
+  nav .nav-contenedor-centro {
+    display: none;
+  }
+}
+/*FIN RESPONSIVE*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.buscador {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(82, 175, 79, 0.5);
+  align-items: center;
+  padding: 10px 40px;
+}
+.buscador form input {
+  width: 300px;
+  height: 25px;
+  border: none;
+  background-color: rgb(230, 237, 243);
+  border-radius: 5px;
+}
+.cuerpo {
+  padding: 0 0 50px 50px;
+}
+.articulos {
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+}
+.materias {
+  width: 210px;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: rgb(226, 226, 226);
+  border: 1px solid gray;
+  margin: 30px 0;
+  box-shadow: 0px 0px 20px -5px;
+}
+.materias img {
+  width: 100%;
+  border-radius: 5px;
+}
+.titulo {
+  margin: 50px 0;
+}
+.adquirir {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.adquirir a {
+  text-decoration: none;
+  color: black;
+  background-color: #ea9e44;
+  padding: 3px;
+  border-radius: 10px;
+}
+.adquirir a:hover {
+  background-color: #f58b0a;
+}
+.descuento {
+  background-color: rgba(236, 21, 21, 60%);
+  padding: 3px;
+  border-radius: 8px 0 0 0;
+}
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  padding: 10px;
+  border-bottom: 5px solid white;
+}
+.redes-sociales img {
+  width: 30px;
+}

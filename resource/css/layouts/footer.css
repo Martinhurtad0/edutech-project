@@ -1,0 +1,14 @@
+footer {
+  background-color: rgba(39, 39, 39, 95%);
+}
+.ubicacion {
+  margin-bottom: 30px;
+}
+.contacto {
+  color: white;
+}
+.info {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}

@@ -1,0 +1,14 @@
+.cifras{
+    width:100%;
+    background-image: url(../../../resource/img/inicio/libros.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content:space-evenly;
+    text-align:center;
+    color:rgb(226, 226, 226);
+    font-weight: bolder;
+    font-size: 24px;
+   
+}

@@ -1,0 +1,22 @@
+.container-preguntas {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  justify-content: center;
+}
+.pregunta {
+  display: flex;
+  background-color: rgba(202, 202, 202, 0.5);
+  padding: 10px;
+  align-items: center;
+  column-gap: 5px;
+}
+.pregunta img {
+  width: 8px;
+  height: 10px;
+  transition: transform ease 0.8s;
+}
+
+.pregunta img:hover {
+  transform: rotate(90deg);
+}

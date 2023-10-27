@@ -1,0 +1,30 @@
+.container-niveles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+.nivel-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  border-radius: 8px;
+  background-color: aliceblue;
+  box-shadow: rgba(23, 26, 27, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.nivel-img {
+  max-width: 100%;
+  margin: 0;
+}
+.nivel-img img {
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+}
+.nivel-item span {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  margin: 4px 0px;
+  font-weight: bold;
+  color: rgba(31, 31, 31, 0.8);
+}
