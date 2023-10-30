@@ -16,7 +16,7 @@
      <div class="registro-container">
         
       <a href="" >iniciar sesion</a>
-      <a rel="stylesheet" href="sign_up_user.html" >Registrate</a>
+      <a rel="stylesheet" href="sign_up_user.php" >Registrate</a>
 
      </div>
      <div class="formulario">
@@ -26,7 +26,7 @@
         <label for="contraseña">Contraseña</label>
         <input type="password" id="contraseña" required>
         <a href=""> Olvidaste tu contraseña?</a>
-        <button type="submit"> <a href="../html_brayan/vista_admin.html"  id="enviar">LOGIN</a></button>
+        <button type="submit"> <a href=""  id="enviar">LOGIN</a></button>
         
      </form>
     </div>
