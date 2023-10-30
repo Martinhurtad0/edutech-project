@@ -25,7 +25,7 @@
     <div class="cuerpo">
       <div class="oferta">
         <div class="titulo">
-          <h3>EN OFERTA</h3>
+          <h3>EN OFERTA!</h3>
         </div>
         <div class="articulos">
           <article class="materias">
