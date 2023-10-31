@@ -94,6 +94,7 @@
           </article>
         </div>
       </div>
+      
       <div class="populares">
         <div class="titulo">
           <h3>POPULARES</h3>
