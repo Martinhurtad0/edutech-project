@@ -170,4 +170,6 @@ border-radius: 8px;
   
 }
 
-
+input[type='radio']{
+    width: 15px;
+}
