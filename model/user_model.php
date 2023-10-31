@@ -7,9 +7,9 @@ class user_consult{
     }
     public function insertar($nombres,$apellidos,$tipo_documento,$documento,$sexo,$fecha,$correo,$contrasenia_encriptada,$telefono,$ciudad,$direccion){
      if($this->user_repeat($documento,$this->con)){
-        $msg='Error! el usuario ya está registrado';
+        return 'Error! el usuario ya está registrado';
      }else{
-        $sqlInsert="INSERT INTO users VALUES ($nombres,$apellidos,$tipo_documento,$documento,$sexo,$fecha,$correo,$contrasenia_encriptada,$telefono,$ciudad,$direccion)";   
+        $sqlInsert="INSERT INTO users (`name`,last_name,document_type,dni,birthdate,email,`password`,phone,city,`address`,sex,rol) VALUES ('$nombres','$apellidos','$tipo_documento','$documento','$fecha','$correo','$contrasenia_encriptada','$telefono','$ciudad','$direccion','$sexo','estudiante')";   
         $result=$this->con->query($sqlInsert);
         if($result==1){
             return 'Usuario registrado correctamente' ; 

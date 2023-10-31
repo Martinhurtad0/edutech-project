@@ -17,36 +17,44 @@
      
      <div class="formulario">
      <form action="" method='POST'>
+        <?php 
+        if(isset($msg)){
+            foreach($msg as $i){
+                echo "<h3>$i</h3>";
+            }
+        }
         
+        
+        ?>
         <label for="nombres">Nombres</label>
-        <input type="text" id="nombre" required>
+        <input type="text" id="nombres" name="nombres">
         <label for="apellidos">Apellidos</label>
-        <input type="text" id="apellidos" required>
+        <input type="text" id="apellidos" name="apellidos" required>
         <label for='tipo_documento'>Tipo de documento</label>
         <select name="tipo_documento" id="tipo_documento">
             <option value="CC"  >Cedula de ciudadania</option>
             <option value="TI" >tarjeta de identidad</option>
             <option value="CE" >Cedula de extranjeria</option>
         </select>
-        <label for="documento">Documento</label>
-        <input type="text" id="documento" required>
+        <label for="documento">Número de documento</label>
+        <input type="number" id="documento" name="documento"  required>
         <label for="sexo">Sexo</label>
         <input type="radio" value='M' id='sexo' name='sexo' >M
         <input type="radio" value='F' id='sexo' name='sexo' >F
         <label for="fecha">Fecha de nacimiento</label>
-        <input type="date" id="fecha" required>
+        <input type="date" id="fecha" name="fecha" required>
         <label for="correo">correo electronico</label>
-        <input type="email" id="correo" required>
+        <input type="email" id="correo" name="correo" required>
         <label for="contrasenia">Contraseña</label>
-        <input type="password" id="contrasenia" required>
+        <input type="password" id="contrasenia" name="contrasenia" required>
         <label for="conf-contraseña">Confirmar contraseña</label>
-        <input type="password" id="confContrasenia" required>
+        <input type="password" id="confContrasenia" name="confContrasenia" required>
         <label for="telefono">Telefono</label>
-        <input type="number" id="telefono" required>
+        <input type="number" id="telefono" name="telefono" required>
         <label for="ciudad">Ciudad </label>
-        <input type="text" id="ciudad" required>
+        <input type="text" id="ciudad" name="ciudad" required>
         <label for="direccion">Dirección </label>
-        <input type="text" id="direccion" required>
+        <input type="text" id="direccion" name="direccion" required>
         
         <button type="submit"> CREAR CUENTA</button>
      </form>
