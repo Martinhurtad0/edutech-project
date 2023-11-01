@@ -14,7 +14,7 @@
     <title>Document</title>
   </head>
   <body>
-    <?php require_once('view/layout/nav.html');?>
+    <?php require_once('view/layout/nav.php');?>
     <section class="section-inicio">
       <div class="contenedor-frase">
         <p class="frase">
@@ -106,7 +106,7 @@
           </div>
         </div>
       </article>
-      <a class="boton ver">VER TODOS LOS CURSOS</a>
+      <a class="boton ver" href='../controller/cursos_controller.php'>VER TODOS LOS CURSOS</a>
     </section>
     <section class="section-ofrece">
       <h2 class="h2sub">LO QUE TE OFRECEMOS EN KEPLER</h2>

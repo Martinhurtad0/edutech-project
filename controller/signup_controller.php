@@ -6,7 +6,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     $apellidos=ucwords(strtolower((trim($_POST['apellidos']))));
     $tipo_documento=$_POST['tipo_documento'];
     $documento=str_replace(' ','',$_POST['documento']);
-    $sexo=$_POST['sexo'];
+    $sexo = isset($_POST['sexo']) ? $_POST['sexo'] : '';
     $fecha=new DateTime($_POST['fecha']);
     $correo=strtolower(str_replace(' ','',$_POST['correo']));
     $contrasenia=$_POST['contrasenia'];
@@ -57,7 +57,7 @@ class signup{
         if(!$error){
             $contrasenia_encriptada=password_hash($contrasenia,PASSWORD_DEFAULT,['cost'=>10]);
             $consult=new user_consult;
-            $this->msg[]=$consult->insertar($nombres,$apellidos,$tipo_documento,$documento,$sexo,$fecha,$correo,$contrasenia_encriptada,$telefono,$ciudad,$direccion); 
+            $msg_to_login=$consult->insertar($nombres,$apellidos,$tipo_documento,$documento,$sexo,$fecha,$correo,$contrasenia_encriptada,$telefono,$ciudad,$direccion); 
         }
     }
 }

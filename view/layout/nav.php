@@ -7,7 +7,7 @@
       <a href>CONTACTO</a>
     </div>
     <div class="nav-login">
-      <a href="view/login.php" class="boton login">INICIAR</a>
-      <a href="view/sign_up_user.html" class="boton login">REGISTRO</a>
+      <a href="controller/login_controller.php" class="boton login">INICIAR</a>
+      <a href="controller/signup_controller.php" class="boton login">REGISTRO</a>
     </div>
   </nav>

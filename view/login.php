@@ -16,18 +16,21 @@
      <div class="registro-container">
         
       <a href="" >iniciar sesion</a>
-      <a rel="stylesheet" href="sign_up_user.php" >Registrate</a>
+      <a rel="stylesheet" href="../controller/signup_controller.php">Registrate</a>
 
      </div>
      <div class="formulario">
-     <form action="">
-        <label for="correo">correo electronico</label>
-        <input type="email" id="correo" required>
-        <label for="contraseña">Contraseña</label>
-        <input type="password" id="contraseña" required>
+     <form action="" method='POST'>
+        <?php if(isset($mensaje)){
+            echo "<h3>$mensaje </h3>";
+        } ?>
+        <label for="dni">Documento de identidad</label>
+        <input type="number" id="dni" name="dni" required>
+        <label for="contrasenia">Contraseña</label>
+        <input type="password" id="contrasenia" name="contrasenia" required>
         <a href=""> Olvidaste tu contraseña?</a>
-        <button type="submit"> <a href=""  id="enviar">LOGIN</a></button>
-        
+        <button type="submit" id='submit_login' name='submit_login'> LOGIN</button>
+
      </form>
     </div>
     </div>

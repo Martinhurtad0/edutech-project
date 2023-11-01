@@ -11,7 +11,7 @@
     <div class="cuenta-container">
      <h1> <a href="../index.php"> <img src="../resource/img/updatesale_login_signup/LOGOLOGIN.png" alt=""></a> Crea tu cuenta</h1>
      <div class="registro-container">
-      <a href="login.php" >iniciar sesion</a>
+      <a href="../controller/login_controller.php" >iniciar sesion</a>
       <a href="">Registrate</a>
      </div>
      
