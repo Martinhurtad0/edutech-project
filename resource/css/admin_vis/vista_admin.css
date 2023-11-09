@@ -1,18 +1,9 @@
-a{
+a.ingresarBtn{
     color:black !important;
     text-decoration: none !important;
 }
-body{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
 /* PERTENECE AL CSS MAIN*/
-   * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-   }
+
    .boton {
      font-size: 14px;
      border-radius: 10px;
@@ -20,50 +11,7 @@ body{
      transition: background-color ease 0.4s;
      font-weight: normal;
    }
-   body {
-     background-color: rgb(247, 247, 247);
-   }
    /* CIERRE MAIN*/
-   
-   nav {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     letter-spacing: 0.05em;
-     background-color: rgba(176, 238, 212, 0.302);
-   }
-   
-   nav div img {
-     width: 100px;
-   }
-   nav .nav-contenedor-centro a {
-     margin: 0 15px;
-     padding: 5px 8px;
-     border-bottom: 3px solid transparent;
-     transition: border-color ease 0.7s;
-   }
-   nav .nav-contenedor-centro a:hover {
-     border-color: rgb(8, 184, 37);
-     background-color: rgba(66, 66, 66, 0.1);
-   }
-   .boton.login:hover {
-     background-color: rgba(255, 146, 45, 0.795);
-   }
-   
-   .boton.login {
-     background-color: rgba(214, 214, 214, 0.5);
-   }
-   
-   /*RESPONSIVE DEL NAV*/
-   @media (max-width: 804px) {
-     /*nav*/
-     nav .nav-contenedor-centro {
-       display: none;
-     }
-   }
-   /*FIN RESPONSIVE*/
-   
-
   
 .container_1{
     display: flex;

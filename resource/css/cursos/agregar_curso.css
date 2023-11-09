@@ -31,7 +31,7 @@
 .input {
   width: 70%;
   max-width: 400px;
-  height: 25px;
+  height: 35px;
   margin-top: 15px;
 }
 input[type="number"]::-webkit-inner-spin-button {
@@ -74,7 +74,7 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 70%;
   max-width: 500px;
 }
-footer {
+.footer {
   display: flex;
   align-items: center;
   justify-content: end;
