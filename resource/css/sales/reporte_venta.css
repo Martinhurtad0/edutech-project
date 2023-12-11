@@ -31,10 +31,10 @@
 }
 .formulario form label {
   color: rgb(11, 54, 3);
-  font-size: 25px;
+  font-size: 20px;
 }
 .input {
-  height: 20px;
+  height: 30px;
   width: 100%;
   margin-top: 20px;
   max-width: 380px;
@@ -69,9 +69,15 @@
   }
   .formulario {
     width: 100%;
-    height: 90vh;
+
     align-items: center;
     justify-content: center;
     display: flex;
+  }
+  .formulario form {
+    margin: 0 10px;
+  }
+  .cuerpo{
+    width:100%;
   }
 }

@@ -29,7 +29,7 @@
   margin-top: 40px;
 }
 .input {
-  width: 70%;
+  width: 90%;
   max-width: 400px;
   height: 35px;
   margin-top: 15px;
@@ -40,7 +40,7 @@ input[type="number"]::-webkit-inner-spin-button {
 #descripcion {
   resize: none;
   height: 100px;
-  width: 70%;
+  width: 90%;
   max-width: 400px;
 }
 .agregar {
@@ -104,5 +104,9 @@ input[type="number"]::-webkit-inner-spin-button {
   }
   .formulario form {
     width: 100%;
+  }
+  .formulario form label {
+    
+    font-size: 18px;
   }
 }

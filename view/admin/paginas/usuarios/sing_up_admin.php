@@ -1,3 +1,5 @@
+
+
 <?php 
 $urlStarter='../../../view/admin/';  //son desde el controlador
 ?>
@@ -19,10 +21,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="../../../view/admin/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../../view/admin/dist/css/adminlte.min.css">
-  <link rel="stylesheet" href="../../../view/admin/dist/css/adminlte.min.css">
   <!-- CSS CURSOS ADMIN -->
-  <link rel="stylesheet" href="assets/css/ventas.css" />
-    <link rel="stylesheet" href="../../../resource/css/sales/ventas.css" />
+    <link rel="stylesheet" href="../../../resource/css/signUp/sign_up_admin.css">
     <link rel="icon" href="../../../resource/img/icons/logo-kepler-removebg-preview.png" />
 </head>
 <body class="hold-transition sidebar-mini">
@@ -43,12 +43,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Agregar curso</h1>
+            <h1 class="m-0">Gestionar usuario</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Agregar curso</li>
+              <li class="breadcrumb-item active">Gestionar usuario</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -58,23 +58,67 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <!-- Contenido principal vista -->
     <section class="content">
-      <div class="container-fluid">
       
-      <div class="">
       
-      <div class="cuerpo">
-      <div class="imagen">
-        <img src="../../../resource/img/adm_ventas/pagos.png" alt="" />
-      </div>
-      <div class="botones">
-        <a href="#">Buscar Venta</a>
-        <a href="#">Registrar Venta</a>
-        <a href="#">Reportar Ventas</a>
-      </div>
+    <div class="row">
+    
+<div class="log-container">
+    <div class="cuenta-container">
+    
+     <div class="formulario">
+     <form action="">
+        <label for='rol'>Rol</label>
+        <select name="rol" id="rol">
+            <?php
+            if($rol=='super_admin'){
+                echo "<option value='admin' > Administrador </option>";    //SOLO PUEDE CREARLO EL SUPERADMIN
+            }
+            ?>
+            <option value="docente" > Docente </option>
+            <option value="estudiante" > Estudiante </option>
+        </select>
+        <label for="nombres">Nombres</label>
+        <input type="text" id="nombre" required>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" required>
+        <label for='tipo_documento'>Tipo de documento</label>
+        <select name="tipo_documento" id="tipo_documento">
+            <option value="CC"  >Cedula de ciudadania</option>
+            <option value="TI" >tarjeta de identidad</option>
+            <option value="CE" >Cedula de extranjeria</option>
+        </select>
+        <label for="documento">Documento</label>
+        <input type="text" id="documento" required>
+        <label for="sexo">Sexo</label>
+        <input type="radio" value='M' id='sexo' name='sexo' >M
+        <input type="radio" value='F' id='sexo' name='sexo' >F
+        <label for="fecha">Fecha de nacimiento</label>
+        <input type="date" id="fecha" required>
+        <label for="correo">correo electronico</label>
+        <input type="email" id="correo" required>
+        <label for="contrasenia">Contraseña</label>
+        <input type="password" id="contrasenia" required>
+        <label for="conf-contraseña">Confirmar contraseña</label>
+        <input type="password" id="confContrasenia" required>
+        <label for="telefono">Telefono</label>
+        <input type="number" id="telefono" required>
+        <label for="ciudad">Ciudad </label>
+        <input type="text" id="ciudad" required>
+        <label for="direccion">Dirección </label>
+        <input type="text" id="direccion" required>
+        
+        <button type="submit"> CREAR CUENTA</button>
+     </form>
     </div>
-          
-      </div>
+    </div>
+ <div class="image">
+        <img src="../../../resource/img/updatesale_login_signup/imagenlogin.png" alt="">
+ </div>
 
+
+    </div>
+    </div>
+ 
     </section>
     <!-- /. Maincontent -->
   </div> 
@@ -107,7 +151,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="../../../view/admin/dist/js/adminlte.min.js"></script>
 </body>
 </html>
-
 
 
 
